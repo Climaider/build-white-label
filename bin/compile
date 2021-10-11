@@ -11,8 +11,8 @@ echo $BUILD_DIR
 find $BUILD_DIR -type f -name 'test.png' 2>/dev/null
 
 find / -type f -name 'test.png' 2>/dev/null
+pwd
 
-
-cp -R $BUILD_DIR/src/white-label/skov-sponsor/image-replacement/* .
+cp -R $BUILD_DIR/src/white-label/skov-sponsor .
 
 ls
