@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+BUILD_DIR=$1
+CACHE_DIR=$2
+BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
+
+echo BUILD_DIR
+echo CACHE_DIR
+echo BIN_DIR
+
 cp -R ./src/white-label/skov-sponsor/image-replacement/* ./build/static/media/
