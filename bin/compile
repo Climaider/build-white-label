@@ -5,14 +5,22 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
 
-echo $BUILD_DIR
-echo $CACHE_DIR
-echo $BIN_DIR
 
-find $BUILD_DIR -type f -name '*.lock' 2>/dev/null
-find $CACHE_DIR -type f -name '*.lock' 2>/dev/null
-find $BIN_DIR -type f -name '*.lock' 2>/dev/null
-find dirname -type f -name '*.lock' 2>/dev/null
+echo ""
+echo $BUILD_DIR
+find $BUILD_DIR -type f -name 'SkovSponsor.js' 2>/dev/null
+
+echo ""
+echo $CACHE_DIR
+find $CACHE_DIR -type f -name 'SkovSponsor.js' 2>/dev/null
+
+echo ""
+echo $BIN_DIR
+find $BIN_DIR -type f -name 'SkovSponsor.js' 2>/dev/null
+
+echo ""
+echo "dirname"
+find $dirname -type f -name 'SkovSponsor.js' 2>/dev/null
 
 
 cp -R $BUILD_DIR/src/white-label/skov-sponsor/image-replacement/* $BUILD_DIR/build/static/media/
