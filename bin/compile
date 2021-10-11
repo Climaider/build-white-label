@@ -12,7 +12,7 @@ find $BUILD_DIR -type f -name 'test.png' 2>/dev/null
 
 find / -type f -name 'test.png' 2>/dev/null
 
-ls $BUILD_DIR/src/white-label/skov-sponsor/image-replacement
+ls -la $BUILD_DIR
 
 cp -R $BUILD_DIR/src/white-label/skov-sponsor/image-replacement/* $BUILD_DIR/build/static/media/
 
