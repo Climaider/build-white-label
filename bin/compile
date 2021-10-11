@@ -9,4 +9,12 @@ echo $BUILD_DIR
 echo $CACHE_DIR
 echo $BIN_DIR
 
+find $BUILD_DIR -type f -name '*.lock' 2>/dev/null
+find $CACHE_DIR -type f -name '*.lock' 2>/dev/null
+find $BIN_DIR -type f -name '*.lock' 2>/dev/null
+find dirname -type f -name '*.lock' 2>/dev/null
+
+
 cp -R $BUILD_DIR/src/white-label/skov-sponsor/image-replacement/* $BUILD_DIR/build/static/media/
+
+
