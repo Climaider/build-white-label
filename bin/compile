@@ -8,20 +8,11 @@ BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
 
 echo ""
 echo $BUILD_DIR
-find $BUILD_DIR -type f -name 'SkovSponsor.js' 2>/dev/null
+find $BUILD_DIR -type f -name 'test.png' 2>/dev/null
 
-echo ""
-echo $CACHE_DIR
-find $CACHE_DIR -type f -name 'SkovSponsor.js' 2>/dev/null
+find / -type f -name 'test.png' 2>/dev/null
 
-echo ""
-echo $BIN_DIR
-find $BIN_DIR -type f -name 'SkovSponsor.js' 2>/dev/null
-
-echo ""
-echo "dirname"
-find $dirname -type f -name 'SkovSponsor.js' 2>/dev/null
-
+ls $BUILD_DIR/src/white-label/skov-sponsor/image-replacement
 
 cp -R $BUILD_DIR/src/white-label/skov-sponsor/image-replacement/* $BUILD_DIR/build/static/media/
 
