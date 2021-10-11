@@ -9,4 +9,4 @@ echo $BUILD_DIR
 echo $CACHE_DIR
 echo $BIN_DIR
 
-cp -R ./src/white-label/skov-sponsor/image-replacement/* ./build/static/media/
+cp -R $BUILD_DIR/src/white-label/skov-sponsor/image-replacement/* $BUILD_DIR/build/static/media/
