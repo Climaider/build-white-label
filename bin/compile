@@ -15,4 +15,4 @@ pwd
 
 cp -R $BUILD_DIR/src/white-label/skov-sponsor/image-replacement/* $BUILD_DIR/build/static/media
 
-
+ls $BUILD_DIR/build/static/media
