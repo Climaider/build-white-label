@@ -17,4 +17,4 @@ FROMPATH=$BUILD_DIR/src/white-label/skov-sponsor/graphics/
 
 rsync -r $FROMPATH $BUILD_DIR/src/graphics
 
-ls $BUILD_DIR/build/static/media
+ls $BUILD_DIR/src/graphics
