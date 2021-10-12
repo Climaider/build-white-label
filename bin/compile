@@ -13,8 +13,8 @@ find $BUILD_DIR -type f -name 'test.png' 2>/dev/null
 find / -type f -name 'test.png' 2>/dev/null
 pwd
 
-FROMPATH=$BUILD_DIR/src/white-label/skov-sponsor/image-replacement/
+FROMPATH=$BUILD_DIR/src/white-label/skov-sponsor/graphics/
 
-rsync -r $FROMPATH $BUILD_DIR/build/static/media
+rsync -r $FROMPATH $BUILD_DIR/src/graphics
 
 ls $BUILD_DIR/build/static/media
